@@ -10,12 +10,49 @@
           {{ $t('account.menu_titles.details') }}
         </router-link>
       </li>
-      <li v-if="$can($permissions.CanViewUsers) && $isActive($features.ManageUsers)" class="nav-item">
+      <li v-if="$can($permissions.CanViewUsers)" class="nav-item">
         <router-link to="users"
                      active-class="active"
                      tag="a"
                      class="nav-link">
           {{ $t('account.menu_titles.users') }}
+        </router-link>
+      </li>
+      <li v-if="$can($permissions.CanViewOrders)" class="nav-item">
+        <router-link to="orders"
+                     active-class="active"
+                     tag="a"
+                     class="nav-link">
+          {{ $t('account.menu_titles.orders') }}
+        </router-link>
+      </li>
+
+      <li v-if="$can($permissions.CanViewOrders)" class="nav-item">
+        <router-link
+          to="invoices"
+          active-class="active"
+          tag="a"
+          class="nav-link">
+          {{ $t('account.menu_titles.invoices') }}
+        </router-link>
+      </li>
+
+      <li v-if="$can($permissions.CanViewOrders)" class="nav-item">
+        <router-link
+          to="payments"
+          active-class="active"
+          tag="a"
+          class="nav-link">
+          {{ $t('account.menu_titles.payments') }}
+        </router-link>
+      </li>
+      <li class="nav-item">
+        <router-link
+          to="drafts"
+          active-class="active"
+          tag="a"
+          class="nav-link">
+          {{ $t('account.menu_titles.drafts') }}
         </router-link>
       </li>
     </ul>

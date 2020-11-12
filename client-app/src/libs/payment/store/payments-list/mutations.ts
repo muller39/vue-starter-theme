@@ -1,5 +1,6 @@
 import { MutationTree } from "vuex";
 import { PaymentSearchResult, PaymentSearchCriteria } from 'core/api/api-clients';
+import { localizeGridColumns } from 'core/services/localization.helper.service';
 import { FETCH_PAYMENTS, SET_PAYMENTS_SEARCH_CRITERIA, SET_PAYMENTS } from "libs/payment/store/payments-list/definitions";
 import { PaymentsListState } from "libs/payment/store/payments-list/types";
 import { fetchAsync, setAsync } from '@core/utilities/async-state';
@@ -15,6 +16,8 @@ export const mutations: MutationTree<PaymentsListState> = {
   [SET_PAYMENTS](state, payload: PaymentSearchResult) {
     state.payments.results = payload.results  || [];
     state.payments.totalCount = payload.totalCount || 0;
+    //TODO: Move out from here
+    state.columns = localizeGridColumns("account.payments.grid.columns", state.columns);
     setAsync(state);
   }
 };

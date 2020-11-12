@@ -1,5 +1,6 @@
 import { MutationTree } from "vuex";
 import { CartSearchCriteria, ShoppingCartSearchResult, IShoppingCart } from "core/api/api-clients";
+import { localizeGridColumns } from 'core/services/localization.helper.service';
 import { fetchAsync, setAsync } from "@core/utilities/async-state";
 import { FETCH_DRAFTS, SET_DRAFTS_SEARCH_CRITERIA, SET_DRAFTS, SET_SELECTED_DRAFT } from "./definitions";
 import { DraftsListState } from "./types";
@@ -13,8 +14,10 @@ export const mutations: MutationTree<DraftsListState> = {
     fetchAsync(state);
   },
   [SET_DRAFTS](state, payload: ShoppingCartSearchResult) {
-    state.drafts.results = payload.results  || [];
+    state.drafts.results = payload.results || [];
     state.drafts.totalCount = payload.totalCount || 0;
+    //TODO: Move out from here
+    state.columns = localizeGridColumns("account.drafts.grid.columns", state.columns);
     setAsync(state);
   },
   [SET_SELECTED_DRAFT](state, payload: IShoppingCart) {

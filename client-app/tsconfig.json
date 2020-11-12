@@ -26,7 +26,6 @@
       "@i18n": [ "i18n" ],
       "@core/*": [ "core/*" ],
       "@components/*": [ "components/*" ],
-      "@init-app/*": [ "pages/init/*" ],
       "@account/*": [ "pages/account/*" ],
       "@catalog/*": [ "pages/catalog/*" ]
     },
