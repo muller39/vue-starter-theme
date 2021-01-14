@@ -20,4 +20,3 @@ InitializationService.initializeCommon().then(() => {
     }).$mount("#hero-slider");
   }
 });
-
