@@ -89,7 +89,7 @@ jobs:
       uses: VirtoCommerce/vc-github-actions/publish-theme@master
 
     - name: Invoke Theme deployment workflow
-      if: ${{ github.ref == 'refs/heads/vsf-rnd-integration' }}
+      if: ${{ github.ref == 'refs/heads/vsf-rnd-integration' || '${{ github.event_name }}' == 'workflow_dispatch' }}
       uses: benc-uk/workflow-dispatch@v1
       with:
         workflow: Theme deployment
