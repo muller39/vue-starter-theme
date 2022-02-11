@@ -1,4 +1,5 @@
 export { default as VcAlert } from "./alert/alert.vue";
+export { default as VcBreadcrumbs } from "./breadcrumbs/breadcrumbs.vue";
 export { default as VcButton } from "./button/button.vue";
 export { default as VcCheckbox } from "./checkbox/checkbox.vue";
 export { default as VcImage } from "./image/image.vue";

@@ -1,3 +1,5 @@
+import { string } from "yup";
+
 export interface IValidationRules {
   required?: boolean;
   min?: number;
@@ -11,4 +13,9 @@ export interface ItemAction {
   bgColor: string;
   position: string;
   clickHandler(item: any): any;
+}
+
+export interface IBreadcrumbs {
+  title: string;
+  url: string;
 }

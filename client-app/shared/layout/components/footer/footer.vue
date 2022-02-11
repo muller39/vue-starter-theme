@@ -46,7 +46,7 @@
         <div class="uppercase font-extrabold text-base text-white mb-3">Online resources</div>
         <div class="flex flex-col space-y-1">
           <FooterLink to="/catalog">Catalog</FooterLink>
-          <FooterLink to="/hot-buys">Hot Buys</FooterLink>
+          <FooterLink to="/landing">Landing (NEW!)</FooterLink>
           <FooterLink to="/rebates">Rebates</FooterLink>
           <FooterLink to="/replacement-parts">Replacement Parts</FooterLink>
         </div>

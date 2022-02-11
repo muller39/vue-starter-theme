@@ -2,7 +2,7 @@
   <!-- Dropdown menu -->
   <div v-if="children?.length" ref="submenu" class="relative">
     <div
-      class="uppercase font-extrabold text-gray-500 flex items-center cursor-pointer"
+      class="uppercase font-extrabold text-white flex items-center cursor-pointer"
       @click="submenuVisible = !submenuVisible"
     >
       <div>
@@ -19,7 +19,7 @@
     >
       <template v-for="(item, i) in children" :key="i">
         <slot name="item">
-          <router-link :to="item.url" class="font-bold text-gray-500 text-sm" @click="submenuVisible = false">
+          <router-link :to="item.url" class="font-bold text-gray-900 text-sm" @click="submenuVisible = false">
             {{ item.title }}
           </router-link>
         </slot>
@@ -27,7 +27,7 @@
     </div>
   </div>
   <!-- Regular link -->
-  <router-link v-else :to="to" class="menu-link uppercase font-extrabold text-gray-500" :class="$attrs.class">
+  <router-link v-else :to="to" class="menu-link uppercase font-extrabold text-white" :class="$attrs.class">
     <slot>{{ title }}</slot>
   </router-link>
 </template>

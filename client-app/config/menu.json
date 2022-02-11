@@ -1,7 +1,6 @@
 {
   "header": {
-    "main": [
-      { "id": "home", "title": "Home", "url": "/" },
+    "catalog": [
       {
         "id": "catalog",
         "title": "All products",
@@ -11,10 +10,11 @@
           { "title": "Laser Printers", "url": "/catalog/multifunction-printers" },
           { "title": "Inkjet Printers", "url": "/catalog/all-in-one" }
         ]
-      },
+      }
+    ],
+    "remaining": [
       { "id": "bulk", "title": "Bulk order pad", "url": "/bulk-order" },
-      { "id": "checkout", "title": "Cart", "url": "/checkout" },
-      { "id": "contact", "title": "Contact us", "url": "/contact" }
+      { "id": "checkout", "title": "Cart", "url": "/checkout" }
     ]
   },
   "footer": []

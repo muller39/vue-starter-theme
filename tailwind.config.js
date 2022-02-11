@@ -17,16 +17,19 @@ module.exports = {
         red: {
           500: "#FF4A4A",
         },
+        grey: {
+          900: "#FF0000",
+        },
         cyan: {
           500: "#5294AD",
           700: "#00739E",
         },
 
         primary: {
-          DEFAULT: "#F0AD4E",
+          DEFAULT: "#003869",
         },
         secondary: {
-          DEFAULT: "#151B1E",
+          DEFAULT: "#FBD200",
         },
         focus: {
           DEFAULT: "#00739E",
