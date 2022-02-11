@@ -13,8 +13,6 @@
     </div>
   </div>
 
-  <div class="h-56">...</div>
-  <div class="bg-gray-100 h-56">...</div>
   <div class="bg-gray-700 h-56">...</div>
 
   <div class="bg-gray-100">
