@@ -26,6 +26,7 @@
         :text="$t('shared.account.navigation.links.your_list')"
         class="list-icon"
       ></AccountNavigationLink>
+      <AccountNavigationLink to="/account/loyalty" text="Loyalty" class="list-icon"></AccountNavigationLink>
       <AccountNavigationLink
         to="/account/checkout-defaults"
         :text="$t('shared.account.navigation.links.checkout_defaults')"

@@ -1,0 +1,12 @@
+query getPointsOperations($skip: Int, $storeId: String, $take: Int, $userId: String) {
+  searchPointsOperations(skip: $skip, storeId: $storeId, take: $take, userId: $userId) {
+    results {
+      amount
+      balance
+      createdDate
+      isDeposit
+      reason
+    }
+    totalCount
+  }
+}

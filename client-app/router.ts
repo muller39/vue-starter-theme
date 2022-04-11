@@ -24,6 +24,7 @@ const Orders = () => import("./pages/account/orders.vue");
 const Profile = () => import("./pages/account/profile.vue");
 const DemoLanding = () => import("./pages/demo-landing/demo-landing.vue");
 const CompareProducts = () => import("./pages/compare-products/compare-products.vue");
+const Loyalty = () => import("./pages/account/loyalty.vue");
 
 // Router definition
 const router = createRouter({
@@ -71,6 +72,7 @@ const router = createRouter({
             },
           ],
         },
+        { path: "loyalty", name: "Loyalty", component: Loyalty },
       ],
     },
     { path: "/forgot-password", name: "ForgotPassword", component: ForgotPassword },

@@ -4,6 +4,8 @@
   >
     <!-- Authorized menu items -->
     <div v-if="isAuthenticated" class="flex items-center">
+      <TopHeaderLink to="/account/loyalty">Loyalty</TopHeaderLink>
+      <div class="mx-3 h-1 w-1 bg-[color:var(--color-primary)] rounded"></div>
       <TopHeaderLink to="/account/dashboard" v-t="'shared.layout.header.top_header.link_dashboard'"></TopHeaderLink>
       <div class="mx-3 h-1 w-1 bg-[color:var(--color-primary)] rounded"></div>
       <TopHeaderLink to="/account/orders" v-t="'shared.layout.header.top_header.link_order_history'"></TopHeaderLink>
